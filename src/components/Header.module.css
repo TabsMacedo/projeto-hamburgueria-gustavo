@@ -1,0 +1,97 @@
+/* Header.module.css */
+.header {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.8rem; /* Aumentado para melhor destaque */
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.ul li {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFD700;
+  transition: width 0.3s ease-in-out;
+} 
+
+ .ul li:hover::after {
+  width: 100%;
+} 
+
+/* Botão de pedido */
+.orderButton {
+  background-color: #FFD700; /* Dourado */
+  color: #8B0000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.orderButton:hover {
+  background-color: #FFA500; /* Laranja */
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .orderButton {
+    margin-top: 10px;
+  }
+}
