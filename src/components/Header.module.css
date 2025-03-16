@@ -57,9 +57,12 @@
   transition: width 0.3s ease-in-out;
 } 
 
- .ul li:hover::after {
+.ul li:hover::after {
   width: 100%;
-} 
+}
+.link{
+  font-size: 32px;
+}
 
 /* Botão de pedido */
 .orderButton {
@@ -71,6 +74,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease-in-out, transform 0.2s ease;
+  font-family: var(--font-work-sans), sans-serif !important;
 }
 
 .orderButton:hover {

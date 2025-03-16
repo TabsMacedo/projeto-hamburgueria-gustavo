@@ -1,7 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/src/components/Header";
+import { Work_Sans } from "next/font/google";
 
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Adicione os pesos desejados
+  variable: "--font-work-sans", // Cria uma variável CSS
+});
 
 
 export const metadata = {
@@ -12,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
-      <body>
+      <body className={workSans.className}>
         <Header />
         {children}
       </body>

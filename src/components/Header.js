@@ -6,7 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          🍔 <Link href="/menu">BurgerHouse</Link>
+         <Link className={styles.link} href="/menu">🍔 BurgerHouse</Link>
         </div>
         <ul className={styles.ul}>
           <li><Link href="/">Menu</Link></li>
