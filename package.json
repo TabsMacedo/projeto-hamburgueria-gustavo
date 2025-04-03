@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1",
     "next": "^15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
